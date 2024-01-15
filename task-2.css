@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lato&family=Open+Sans&display=swap');
+*{
+    font-family: 'Bacasime Antique', serif;
+    outline:none;
+    border:none;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    color:black;
+}
+html{
+    font-size: 22px;
+    overflow-x: hidden;
+}
+body{
+    
+    color:black;
+}
+/*HEADER*/
+.top{
+    background:hsl(200, 69%, 14%);
+    top:0;
+    
+    left:0;
+    width:100%;
+    padding:2% 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+    
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+}
+.menu a{
+    font-size:1.2rem;
+    color:white;
+    margin-left: 2rem;
+    transition:0.3s ease; 
+    font-weight: 400;
+}
+#bar{
+    font-size: 2rem;
+    display: none;
+}
+.menu a:hover{
+    color:rgb(0, 0, 0);
+    
+}
+section{
+    padding:2rem 9%;
+    min-height:100vh ;
+
+}
+/*HOME*/
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeintro h2,h3{
+    font-size: 2.5rem;
+
+}
+span{
+    color: blue;
+}
+.icons a{
+    width:4rem;
+    height:4rem;
+    font-size: 1 rem 1rem 2rem 0;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70%;
+    transition: 0.4s ease;
+    
+}
+.icons a:hover{
+    color:blue;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+.con{
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    background:rgb(255, 0, 0);
+    margin:2rem 0;
+    padding:0.5rem 2rem;
+    border-radius: 1rem;
+    transition:0.4sec ease;
+
+}
+.con:hover{
+    color:blue;
+    background: rgb(255, 242, 1);
+    box-shadow: 0 0 1;
+}
+/*ABOUT*/
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.topabout{
+    font-size: 2rem;
+    text-align: center;
+    margin:4rem 0;
+}
+.aboutdata{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+.resume h4{
+    font-size: 2rem;
+}
+.data p{
+    font-size: 1.4rem;
+    align-items: center;
+}
+.skidata{
+    font-size: 2rem;
+    margin:2em 0;
+}
+.skill{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.skillset{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:7rem;
+
+}
+.sk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+.sk:hover{
+    border-radius: 1rem solid;
+    transform:scale(0.5,0.5);
+}
+.sk .bx{
+    font-size:6rem;
+}
+.sk h1{
+    font-size: 2rem;
+    margin:1.2rem;
+}
+.sk p{
+    opacity: 0.5;
+    text-align: center;
+    justify-content: center;
+}
+.sk .bx{
+    font-size: 8rem;
+    transition:0.4s ease;
+}
+/*CONTACT*/
+.contact{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: columns;
+}
+form input,textarea{
+    width:100%;
+    padding:0.5rem;
+    font-size: 1rem;
+    background:rgb(210, 210, 210);
+    border-radius: 0.5rem;
+    resize:none;
+}
+form{
+    display:grid;
+    gap:2rem;
+    row-gap:1rem;
+}
+.skill{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+@media(max-width:1200px){
+    html{
+        font-size:50%;
+    }
+}
+@media(max-width:1200px){
+    .header{
+        padding:3rem 4%;
+    }
+}
+@media(max-width:700px){
+    .home img{
+        width:30vw;
+    }
+}
+@media(max-width:750px){
+    #bar{
+        display:block;
+    }
+    .menu{
+        width:100%;
+        position:absolute;
+        top:100%;
+        left:0;
+        background:blue;
+        display:none;
+
+    }
+    .menu.active{
+        display:block;
+    }
+    .menu a{
+        display:block;
+    }
+}
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 1rem blue;
+}
+.pic{
+    padding-left: 600px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
