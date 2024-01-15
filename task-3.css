@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('task-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.225rem;
+}
+  
+h1 {
+    padding-top: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.input{
+    margin-bottom: 20px;
+}
+  
+input[type="number"] {
+    width: 200px;
+    padding: 7px;
+    margin-right: 10px;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color:royalblue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+#solution {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+  
